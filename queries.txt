@@ -1,17 +1,28 @@
 1.
 Users.objects.create('first_name='jane', last_name='doe', email_address='jdoe@gmail.com', age='27')
-
-2.
 Users.objects.create('first_name='bob', last_name='smith', email_address='bsmith@gmail.com', age='15')
-
-3.
 Users.objects.create('first_name='john', last_name='smith', email_address='jsmith@gmail.com', age='21')
 
-4.
+2.
 Users.objects.all
 
-5.
+3.
 Users.objects.last()
 
-6.
+4.
 Users.objects.first()
+
+5.
+u3_update=Users.objects.get(id=3)
+u3_update.last_name ="Pancakces"
+u3_update.save()
+
+6.
+u2_delete =Users.objects.get(id=2)
+u2_delete.delete()  
+
+7.
+Users.objects.order_by("first_name")
+
+8.
+Users.objects.order_by("-first_name")
