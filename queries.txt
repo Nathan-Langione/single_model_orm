@@ -1,0 +1,17 @@
+1.
+Users.objects.create('first_name='jane', last_name='doe', email_address='jdoe@gmail.com', age='27')
+
+2.
+Users.objects.create('first_name='bob', last_name='smith', email_address='bsmith@gmail.com', age='15')
+
+3.
+Users.objects.create('first_name='john', last_name='smith', email_address='jsmith@gmail.com', age='21')
+
+4.
+Users.objects.all
+
+5.
+Users.objects.last()
+
+6.
+Users.objects.first()
